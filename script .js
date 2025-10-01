@@ -1,73 +1,55 @@
-console.log('\n=== ЗАВДАННЯ 1: Змінна age ===');
-let age = 25;
-console.log('Мій вік:', age);
+// Завдання 1
+const celsius = 25;
+const fahrenheit = (celsius * 9/5) + 32;
+console.log(`Температура: ${celsius}°C = ${fahrenheit}°F`);
 
+// Завдання 2
+const daysInMonth = 30;
+const hoursInMonth = daysInMonth * 24;
+const minutesInMonth = hoursInMonth * 60;
+console.log(`Днів у місяці: ${daysInMonth}`);
+console.log(`Годин у місяці: ${hoursInMonth}`);
+console.log(`Хвилин у місяці: ${minutesInMonth}`);
 
-console.log('\n=== ЗАВДАННЯ 2: Змінна name ===');
-let name = 'Олексій';
-console.log('Моє ім\'я:', name);
+// Завдання 3
+let health = 100;
+let energy = 100;
+health = health - 20;
+energy = energy - 30;
+console.log(`Здоров'я гравця: ${health}`);
+console.log(`Енергія гравця: ${energy}`);
 
+// Завдання 4
+const totalPrice = 1000;
+const discount = 10;
+const discountedPrice = totalPrice - (totalPrice * discount / 100);
+console.log(`Початкова ціна: ${totalPrice}`);
+console.log(`Ціна зі знижкою ${discount}%: ${discountedPrice}`);
 
-console.log('\n=== ЗАВДАННЯ 3: Змінна isStudent ===');
-let isStudent = true;
-console.log('Чи є студентом:', isStudent);
+// Завдання 5
+const floatNumber = 12.78;
+const roundedDown = Math.floor(floatNumber);
+console.log(`Число: ${floatNumber}, округлене до меншого: ${roundedDown}`);
 
+// Завдання 6
+const floatString = "45.67";
+const parsedFloat = parseFloat(floatString);
+console.log(`Рядок "${floatString}" перетворено у число: ${parsedFloat}`);
 
-console.log('\n=== ЗАВДАННЯ 4: Змінна myString ===');
-let myString = 'Життя прекрасне, коли ти знаєш програмування!';
-console.log('Улюблена цитата:', myString);
+// Завдання 7
+const intString = "123";
+const parsedInt = parseInt(intString);
+console.log(`Рядок "${intString}" перетворено у ціле число: ${parsedInt}`);
 
+// Завдання 8
+const number = 64;
+const sqrtNumber = Math.sqrt(number);
+console.log(`Квадратний корінь з ${number}: ${sqrtNumber}`);
 
-console.log('\n=== ЗАВДАННЯ 5: Змінна myNumber ===');
-let myNumber = 15;
-console.log('Початкове значення myNumber:', myNumber);
-myNumber = myNumber + 10;
-console.log('myNumber після додавання 10:', myNumber);
-
-
-console.log('\n=== ЗАВДАННЯ 6: Змінна myNull ===');
-let myNull = null;
-console.log('Значення myNull:', myNull);
-
-
-console.log('\n=== ЗАВДАННЯ 7: Prompt ===');
-let userName = prompt('Введіть своє ім\'я');
-console.log('Введене ім\'я:', userName);
-console.log('Тип змінної userName:', typeof userName);
-
-if (userName !== null && userName !== '') {
-    alert('Привіт, ' + userName + '!');
-} else {
-    alert('Ви не ввели ім\'я або відмінили дію');
-}
-
-console.log('\n=== ЗАВДАННЯ 8: Confirm ===');
-let userAnswer = confirm('Ви дійсно хочете покинути сторінку?');
-console.log('Відповідь користувача:', userAnswer);
-console.log('Тип змінної userAnswer:', typeof userAnswer);
-
-if (userAnswer === true) {
-    console.log('Користувач натиснув ОК - хоче покинути сторінку');
-    alert('Ви підтвердили вихід зі сторінки');
-} else {
-    console.log('Користувач натиснув CANCEL - залишається на сторінці');
-    alert('Ви вирішили залишитись на сторінці');
-}
-
-
-console.log('\n=== ЗАВДАННЯ 9: Alert + Confirm ===');
-
-
-alert('Увага! Дія може бути небезпечною.');
-
-
-let confirmDangerous = confirm('Ви впевнені, що хочете продовжити?');
-console.log('Підтвердження небезпечної дії:', confirmDangerous);
-
-if (confirmDangerous === true) {
-    alert('Дію підтверджено. Продовжуємо...');
-    console.log('Користувач підтвердив небезпечну дію');
-} else {
-    alert('Дію скасовано. Безпека понад усе!');
-    console.log('Користувач скасував небезпечну дію');
-}
+// Завдання 9
+const integer = 42;
+const stringNumber = "256";
+const convertedInt = parseInt(stringNumber);
+const convertedString = integer.toString();
+console.log(`Рядок "${stringNumber}" перетворено у число: ${convertedInt}`);
+console.log(`Число ${integer} перетворено у рядок: "${convertedString}"`);
